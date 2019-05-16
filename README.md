@@ -1,4 +1,11 @@
 # Tknight from 369093335@qq.com
+2.3版本更新,其中有2.2版本没有发布,2.2并不是一个特别完善的版本,因为其中线程与网站标题获取并没有得到很好的处理,在2.3版本中这些问题都得到了非常不错的改善
+# 需要第三方运行库: lxml,bs4,requests,其他模块都为python3自带模块
+# pip install lxml
+# pip install bs4
+# pip install requests
+
+====
 2.1版本更新:增加了在HTML扫描结果文件中添加网站标题功能,而且优化了界面 233333 lol  欢迎体验
 
 ====
