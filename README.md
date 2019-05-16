@@ -1,6 +1,10 @@
 # Tknight from 369093335@qq.com
+请使用2.3版本,copy或者下载后文件名可以随意更改方便使用
+
 2.3版本更新,其中有2.2版本没有发布,2.2并不是一个特别完善的版本,因为其中线程与网站标题获取并没有得到很好的处理,在2.3版本中这些问题都得到了非常不错的改善
-使用方法:请在脚本当前目录下存放all_domain.txt的文件中存放需要扫描的域名或者IP,然后cmd中运行 python xxx.py即可开始扫描
+使用方法:请在脚本当前目录下存放all_domain.txt的文件中存放需要扫描的域名或者IP
+cmd中运行 python xxx.py即可开始扫描
+
 # 需要第三方运行库: lxml,bs4,requests,其他模块都为python3自带模块
 # pip install lxml
 # pip install bs4
