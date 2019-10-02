@@ -13,6 +13,9 @@
   使用方法:
     首先运行Range_Create.py来根据脚本内容自行添加IP,或者自己想办法生成IP段存储为domain.txt,将domain.txt与Range_Scan.py存储到同一目录下即可运行Range_Scan.py,扫描完成后会生成Scan.html与Error.html,并且将扫描内容进行了保存,其中访问状态非200的存储为Error.
   后期会对各样的用户需求进行不定期更新,同时在我使用的途中也会对使用不如意的地方进行修改更新,尽情期待.
+===
+19.10.03更新
+上传了fil.py文件,该文件可以读取masscan扫描的结果自动生成配合RangeScan.py的扫描范围,并且可以配合Nmap进行目标系统端口探测
 
 
 后期该脚本会向漏洞自动化挖掘方向进行慢慢开发,喜欢的表哥可以点个Star   LOL
