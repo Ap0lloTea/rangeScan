@@ -3,6 +3,7 @@
 拿旧版本与新版本相比较也是很利于Python初学者对爬虫概念与线程概念一步一步学习的非常好的途径
 需要第三方运行库: lxml,bs4,requests,colorama 其他模块都为python3自带模块
 need lxml,bs4,requests,colorama
+
 pip install lxml
 
 pip install bs4
