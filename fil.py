@@ -4,6 +4,8 @@ nmap_ip = ''
 nmap_allport = ''
 n = []
 for i in f1.readlines():
+	if len(i)<7:
+		pass
 	a = i.strip('\n')[21:].strip(' ').split('/')
 	port = a[0]
 	waitclear = a[1][7:]
