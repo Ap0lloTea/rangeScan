@@ -73,42 +73,61 @@ def gettitle(html):
 def save(num,content,tit="null"):
     if num==0:
         f1= open("Scan.html","a+")
-        a = '<a href="'+content+'" target=_blank>'+content+'---'+tit+'</a><br>\n'
+        a = '<tr onmouseover="this.style.backgroundColor=\'#ff6600\';" onmouseout="this.style.backgroundColor=\'#d4e3e5\';"><td><a href="'+content+'" target=_blank style="font-weight:bold;">'+content+'</a></td><td>'+tit+'</td></tr>\n'
         f1.write(a+"\n")
     elif num==1:
         f2=open("Error.html", 'a+')
-        a = '<a href="'+content+'" target=_blank>'+content+'---'+tit+'</a><br>\n'
+        a = '<tr onmouseover="this.style.backgroundColor=\'#ff6600\';" onmouseout="this.style.backgroundColor=\'#d4e3e5\';"><td><a href="'+content+'" target=_blank style="font-weight:bold;">'+content+'</a></td><td>'+tit+'</td></tr>\n'
         f2.write(a+"\n")
 
 def setStyle(filename):
     html=open(filename,"a+")
     set_style='''
-    <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Range_Scan</title>
-		<style type="text/css">
-			body {
-				background-color: #262626;
-			}
-
-			a {
-				color: #ff4d4d;
-				font-size: 23px;
-			}
-
-			a:visited {
-				color: #ffffff;
-			}
-
-			a:hover {
-				color: #884dff;
-			}
-		</style>
-	</head>
-	<body>
-    '''
+    <html>
+<head>
+<style type="text/css">
+table.hovertable {
+    font-family: verdana,arial,sans-serif;
+    font-size:11px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #999999;
+    border-collapse: collapse;
+}
+table.hovertable th {
+    background-color:#c3dde0;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #a9c6c9;
+}
+table.hovertable tr {
+    background-color:#d4e3e5;
+}
+table.hovertable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #a9c6c9;
+}
+a {
+    color: #000000;
+    font-size: 13px;
+    }
+a:visited {
+    color: #8c8c8c;
+    }
+a:hover {
+    color: #944dff;
+}
+</style>
+</head>
+<body>
+<table class="hovertable">
+<tr>
+    <th>Url</th><th>Title</th>
+</tr>
+	'''
     html.write(set_style)
     html.close()
 
