@@ -43,7 +43,7 @@ def GetHTML(url):
             return html_data_status
         else:
             html_data_status = [url, _request.status_code, 1]
-            print(Fore.BLUE + "[+] " + Fore.RESET +  "{} -ResponseCode {}".format(url, str(_request.status_code)))
+            print(Fore.BLUE + "[-] " + Fore.RESET +  "{} -ResponseCode {}".format(url, str(_request.status_code)))
             return html_data_status
     except:
         request_timeout = ["t!i!meout", "timeout", "timeout"]
