@@ -1,6 +1,9 @@
 # Tknight
-此脚本由在渗透测试过程中为了方便快速探测目标站点和快速打开而出现
-需要第三方运行库: lxml,bs4,requests,colorama 其他模块都为python3自带模块
+新更新,此脚本用于快速探测网络http服务
+
+pip install -r requirements.txt
+
+用法python3 rangeScan.py -h
 
 pip install lxml
 
