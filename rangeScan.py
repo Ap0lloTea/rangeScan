@@ -18,7 +18,6 @@ ReadFileName = options.ReadFile
 OutFileName = options.OutFile
 ports = options.Ports
 thr = eval(options.Threads)
-alive_total = 1
 
 def CheckHttp(url_list):
     new_data = []
@@ -152,17 +151,14 @@ def SetPorts(p):
 def Scan(target_url):
     # [url, _request.status_code, 1]
     # [url, _request.text, 0]
-    global alive_total
     returnlist = GetHTML(target_url)
     fn = OutFileName
     # 根据不同的响应状态(自定)来保存title与url
     if returnlist[2] == 0:
         title = GetTitle(returnlist[1])
         SaveData(0,target_url, fn, title)
-        alive_total += 1
     elif returnlist[2] == 1:
         request_status = str(returnlist[1])
-        alive_total += 1
         SaveData(1, target_url, fn, request_status)
 
 
@@ -199,4 +195,3 @@ TTTTTTT	 K   K  N    N   O   _gggg   H     H  ttttttt
     p.close()
     p.join()
     print(Fore.GREEN + "[+] " + Fore.RESET + "Scan complete")
-    print(Fore.GREEN + "[+] " + Fore.RESET + "Find all alive target:"+str(alive_total))
