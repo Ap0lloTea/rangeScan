@@ -1,0 +1,5 @@
+setuptools
+lxml
+bs4
+requests
+colorama
