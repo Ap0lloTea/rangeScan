@@ -11,7 +11,7 @@ init(autoreset=True)
 q = Queue(-1)
 
 # Check User input
-parse = OptionParser(usage='python rangeScan.py -r domain.txt(default) -o ScanName -p 8000-10000,9000 -t 20')
+parse = OptionParser(usage='python3 rangeScan.py -r domain.txt(default) -o ScanName -p 8000-10000,9000 -t 20')
 parse.add_option('-r', '--readfile', dest='ReadFile', default="domain.txt", type='string', help='Scan Domain file name')
 parse.add_option('-o', '--outfile', dest='OutFile', default="Scan", type='string', help='Result file name')
 parse.add_option('-p', '--ports', dest='Ports', default="default", type='string', help='Scan ports')
