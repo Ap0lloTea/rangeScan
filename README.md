@@ -2,7 +2,9 @@
 新更新,此脚本用于快速探测网络http服务
 
 1.  pip install -r requirements.txt
-
+    
+    or
+    
     pip3 install -r requirements.txt
 
 2.  创建 domain.txt
