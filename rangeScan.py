@@ -192,11 +192,11 @@ TTTTTTT	 K   K  N    N   O   _gggg   H     H  ttttttt
         sys.exit()
     ports_list = SetPorts(ports)
     target_list = []
+    for _ in readfile_list:
+        target_list.append(_)
     for x in readfile_list:
         for y in ports_list:
             target_list.append(x + ":" + y)
-    for _ in readfile_list:
-        target_list.append(_)
     target_list = CheckHttp(target_list)
     setStyle(OutFileName)
     # target_list
