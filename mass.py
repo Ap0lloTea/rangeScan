@@ -60,13 +60,21 @@ def SaveData(rstatus, url, filename, tit="null"):
     if rstatus == 0:
         f1= open(filename+".html","a+")
         a = '<tr onmouseover="this.style.backgroundColor=\'#ff6600\';" onmouseout="this.style.backgroundColor=\'#d4e3e5\';"><td><a href="'+url+'" target=_blank style="font-weight:bold;">'+url+'</a></td><td>'+tit+'</td></tr>\n'
-        f1.write(a+"\n")
-        f1.close()
+        try:
+            f1.write(a+"\n")
+            f1.close()
+        except:
+            print(Fore.RED + "[-]" + Fore.RESET + url+"-EncodingSaveError")
+            f1.close()
     elif rstatus == 1:
         f2=open(filename+"Error.html", 'a+')
         a = '<tr onmouseover="this.style.backgroundColor=\'#ff6600\';" onmouseout="this.style.backgroundColor=\'#d4e3e5\';"><td><a href="'+url+'" target=_blank style="font-weight:bold;">'+url+'</a></td><td>'+tit+'</td></tr>\n'
-        f2.write(a+"\n")
-        f2.close()
+        try:
+            f2.write(a+"\n")
+            f2.close()
+        except:
+            print(Fore.RED + "[-]" + Fore.RESET + url+"-EncodingSaveError")
+            f1.close()
 
 
 def setStyle(filename):
