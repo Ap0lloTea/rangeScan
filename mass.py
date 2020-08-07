@@ -6,7 +6,7 @@ from colorama import init, Fore
 from optparse import OptionParser
 
 parse = OptionParser(usage='python3 mass.py -i domain.txt -o ScanFileName')
-parse.add_option('-i', '--infile', dest='infile', default="domain.txt", type='string', help='Input fil.py result file')
+parse.add_option('-r', '--readfile', dest='infile', default="domain.txt", type='string', help='Input fil.py result file')
 parse.add_option('-o', '--outfile', dest='outfile', default="Scan", type='string', help='result file name')
 options, args = parse.parse_args()
 ifile = options.infile
