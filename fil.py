@@ -1,6 +1,6 @@
 from optparse import OptionParser
 parse = OptionParser(usage='python fil.py -f port.txt')
-parse.add_option('-f', '--file', dest='file',default="port.txt", type='string', help='Input masscan result file')
+parse.add_option('-r', '--readfile', dest='file',default="port.txt", type='string', help='Input masscan result file')
 options, args = parse.parse_args()
 file = options.file
 f1 = open(file, 'r')
