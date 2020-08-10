@@ -141,7 +141,7 @@ def SetPorts(p):
                         print(Fore.RED + "[-]" + Fore.RESET + "ports error!")
                         sys.exit()
                 else:
-                    temp_list2 = i.split("-")
+                    temp_list2 = s.split("-")
                     for z in range(eval(temp_list2[0]), eval(temp_list2[1]) + 1):
                         user_set_ports.append(str(z))
             return user_set_ports
