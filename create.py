@@ -19,6 +19,6 @@ for i in range(255):
 	# ip = a+str(i)
 	for j in arry_:
 		ip = j+str(i)+"\n"
-		f.write(ip+'\n')
+		f.write(ip)
 f.close()
 
