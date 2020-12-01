@@ -204,7 +204,7 @@ TTTTTTT	 K   K  N    N   O   _gggg   H     H  ttttttt
     for _ in target_list:
         q.put(_)
     print(Fore.GREEN + "[+] " + Fore.RESET + "Scan start")
-    for thread_ in range(50):
+    for thread_ in range(thr):
         t = threading.Thread(target=start_scan, args=(q,))
         t.start()
         threads.append(t)
