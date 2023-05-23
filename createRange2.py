@@ -44,7 +44,7 @@ for z in ip_tab_data_list:
 		for b in range(int(ip_index_data_list[1]),int(ip_end_data_list[1])+1):
 			for c in range(0,255):
 				for d in range(0,255):
-					save_ip_list.append(a_ip+str(b)+"."+strip(c)+"."+strip(d))
+					save_ip_list.append(a_ip+str(b)+"."+str(c)+"."+str(d))
 	elif ip_index_data_list[2] != ip_end_data_list[2]:
 		subscript = int(ip_end_data_list[2])+1
 		print("subscript :"+str(subscript))
