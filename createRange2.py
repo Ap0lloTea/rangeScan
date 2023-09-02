@@ -57,6 +57,7 @@ for z in ip_tab_data_list:
 		a_ip = ip_index_data_list[0]+"."+ip_index_data_list[1]+"."+ip_index_data_list[2]+"."
 		for d in range(int(ip_index_data_list[3]),int(ip_end_data_list[3])+1):
 			save_ip_list.append(a_ip+str(d))
-for s in save_ip_list:
-	f1.write(s+"\n")
+	for s in save_ip_list:
+		f1.write(s+"\n")
+	save_ip_list.clear()
 f1.close()
