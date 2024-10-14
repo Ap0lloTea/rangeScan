@@ -43,6 +43,8 @@ def CheckHttp(url_list):
         if "http" not in i[:4]:
             target = "http://" + i
             new_data.append(target)
+            target = "https://" + i
+            new_data.append(target)
         else:
             new_data.append(i)
     return new_data
